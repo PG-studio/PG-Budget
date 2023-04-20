@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#383f50" />
+
+        <meta name="robots" content="index"/>
+        <meta
+            name="description"
+            content="Web site created using create-react-app"
+        />
+        <meta name="keywords" content="mot-clé 1, mot-clé 2, mot-clé 3"/>
+        <meta name="author" content="nom de l’auteur" />
+        <meta name="copyright" content="propriétaire du copyright" />
+
+        <link rel="apple-touch-icon" href="logoApp.png" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link href="../src/styles/index.css" rel="stylesheet" crossorigin="anonymous">
+        <link href="../src/styles/rubriques.css" rel="stylesheet" crossorigin="anonymous">
+        <link href="../src/styles/background.css" rel="stylesheet" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,200" />
+
+        <title>PG-Budget Rubriques</title>
+    </head>
+<body>
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div id="str">
+        <div class="container">
+            <header>
+                <div class="hstack gap-3 pt-3">
+                    <div class="p-2">
+                        <a href="../index.html"><h1 id="Titre">PG-Budget</h1></a>
+                    </div>
+                    <div class="ms-auto p-2">
+                        <a href="#"><p>Rubriques</p></a>
+                    </div>
+                    <div class="p-2">
+                        <p type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Application</p>
+                    </div>
+                </div>
+            </header>
+
+            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel" style="height: 95vh;">
+                <div class="offcanvas-header">
+                  <p>Application</p>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body small">
+
+                  <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 bg-light p-5 rounded-2">
+                            <h2 id="txt_intro" class="display-3 fw-bold align-middle">Tout commence ici</h2>
+                            <p>La bonne gestion commence par savoir ce que l'on a et ce que l'on doit, avec PG-budget, reprenez la main sur l'essentiel !</p>
+                            <h4 class="mt-4">Installer l'application &#128241;</h4>
+                            <div class="list-group list-group-flush" id="list-tab" role="tablist">
+                                <a class="list-group-item-action p-2 m-1 shadow-sm active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">1. Le choix du support</a>
+                                <a class="list-group-item-action p-2 m-1 shadow-sm" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">2. Mettre sur l'écran d'acceuil</a>
+                                <a class="list-group-item-action p-2 m-1 shadow-sm" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">3. Changer le nom</a>
+                                <a class="list-group-item-action p-2 m-1 shadow-sm" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">4. C'est partie !</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="tab-content p-4" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                                    <h3>1. Le choix du support</h3>
+                                    <p>
+                                        <span class="text-decoration-underline">App pour téléphone</span> : <br><br>Sannez le code QR pour ouvrir le site web sur téléphone<br>Ouvrir "partager" <span class="material-symbols-outlined">ios_share</span><br><br>
+                                        <div id="img-QR-code" class="container bg-light rounded-2 shadow"></div>
+                                        <span class="text-decoration-underline">App pour ordinateur</span> : <br><br>Cliquez sur le lien plus bas <br><br><span class="text-primary">https://lien/application/</span>
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                                    <h3>2. Mettre sur l'écran d'acceuil</h3>
+                                    <p>
+                                        <span class="text-decoration-underline">App pour téléphone</span> : <br><br>Cliquez sur "ajouter à la page d'acceuil" <span class="material-symbols-outlined">add_box</span><br><br>
+                                        <span class="text-decoration-underline">App pour ordinateur</span> : <br><br>Ouvrir "partager" <span class="material-symbols-outlined">ios_share</span> et mettre le site web en "signet" <span class="material-symbols-outlined">import_contacts</span>
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                                    <h3>3. Changer le nom</h3>
+                                    <p><span class="text-decoration-underline">App pour téléphone</span> : <br><br>Changer le nom de la page si besoin et cliquez sur ok !</p>
+                                </div>
+                                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                                    <h3>4. C'est partie !</h3>
+                                    <p>
+                                        <span class="text-decoration-underline">App pour téléphone et ordinateur</span> :<br><br>
+                                        Inscrivez-vous sur la page d'acceuil et <br>lancez l'application !
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+    
+            <div id="introduction-rubriques" class="container-fluid">
+                <div class="row">
+                    <div id="img_telephone" class="col-12 col-md-0"></div>
+                    <div id="txt_introduction-rubriques" class="col-12 col-md-6 position-relative d-flex justify-content-center">
+                        <h2 id="txt_intro" class="display-3 mt-4 fw-bold align-middle">la Rubrique <br> finance</h2>
+                    </div>
+                    <div id="img_ordinateur" class="col-0 col-md-6 text-center"></div>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <div id="descr" class="container-fluid bg-light">
+                <div class="row overflow-hidden" style="height: 100vh;">
+                    <div class="col-md-3 border-2">
+                        <div id="navigation-ordinateur" class="container-fluid overflow-x-scroll">
+                            <a id="revenus-btn" href="#" class="list-group-item bg-light text-end border-dark text-primary">Revenus &#128182;</a>
+                            <a id="banque-btn" href="#" class="list-group-item bg-light text-end border-dark">Banques et Assurances &#127974;</a>
+                            <a id="credit-btn" href="#" class="list-group-item bg-light text-end border-dark">Crédit &#128184;</a>
+                            <a id="logement-btn" href="#" class="list-group-item bg-light text-end border-dark">Logement &#127968;</a>
+                            <a id="energie-btn" href="#" class="list-group-item bg-light text-end border-dark">Énergie &#128267;</a>
+                            <a id="alimentation-btn" href="#" class="list-group-item bg-light text-end border-dark">Alimentation &#129365;</a>
+                            <a id="transport-btn" href="#" class="list-group-item bg-light text-end border-dark">Transport &#128663;</a>
+                            <a id="sante-btn" href="#" class="list-group-item bg-light text-end border-dark">Santé &#129658;</a>
+                        </div>
+                    </div>
+                    <div id="corpus" class="col-12 col-md-9 h-100 overflow-scroll pb-5">
+                        <div class="container pb-5 mb-5">
+
+                            <div id="liste-artc-revenus" class="mt-5"></div>
+                            <div id="liste-artc-banques" class="mt-5 d-none"></div>
+                            <div id="liste-artc-credit" class="mt-5 d-none"></div>
+                            <div id="liste-artc-logement" class="mt-5 d-none"></div>
+                            <div id="liste-artc-energie" class="mt-5 d-none"></div>
+                            <div id="liste-artc-alimentation" class="mt-5 d-none"></div>
+                            <div id="liste-artc-transport" class="mt-5 d-none"></div>
+                            <div id="liste-artc-sante" class="mt-5 d-none"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="container-fluid bg-dark">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-2">
+                        <h1 class="text-light">PG-</h1>
+                    </div>
+                    <div class="col-10">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-6 col-md-4">
+                                    <ul class="list-group list-group-flush ">
+                                        <li class="list-group-item bg-dark text-light border-0 fw-bold">Liens</li>
+                                        <li class="list-group-item bg-dark text-light border-0">Concter</li>
+                                        <li class="list-group-item bg-dark text-light border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Application</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <ul class="list-group list-group-flush ">
+                                        <li class="list-group-item bg-dark text-light border-0 fw-bold">Hub légal</li>
+                                        <li class="list-group-item bg-dark text-light border-0">Condition d'utilisation</li>
+                                        <li class="list-group-item bg-dark text-light border-0">Privacy policy</li>
+                                        <li class="list-group-item bg-dark text-light border-0">Cookies policy</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <ul class="list-group list-group-flush ">
+                                        <li class="list-group-item bg-dark text-light border-0 fw-bold">Réseaux sociaux</li>
+                                        <li class="list-group-item bg-dark text-light border-0">LinkedIn</li>
+                                        <li class="list-group-item bg-dark text-light border-0">Instagram</li>
+                                        <li class="list-group-item bg-dark text-light border-0">Twitter</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+        <script src="../javascript/Artc.js"></script>
+        <script src="../javascript/articles/revenus.js"></script>
+        <script src="../javascript/articles/banques.js"></script>
+        <script src="../javascript/articles/credit.js"></script>
+        <script src="../javascript/articles/logement.js"></script>
+        <script src="../javascript/articles/energie.js"></script>
+        <script src="../javascript/articles/alimentation.js"></script>
+        <script src="../javascript/articles/transport.js"></script>
+        <script src="../javascript/articles/sante.js"></script>
+        <script>
+
+            const listeArctileRevenus = document.getElementById("liste-artc-revenus");
+            const listeArctileBanque = document.getElementById("liste-artc-banques");
+            const listeArctileCredit = document.getElementById("liste-artc-credit");
+            const listeArctileLogement = document.getElementById("liste-artc-logement");
+            const listeArctileEnergie = document.getElementById("liste-artc-energie");
+            const listeArctileAlimentation = document.getElementById("liste-artc-alimentation");
+            const listeArctileTransport = document.getElementById("liste-artc-transport");
+            const listeArctileSante = document.getElementById("liste-artc-sante");
+
+            revenus.forEach( function(revenu) {
+                const conteneur = document.createElement("div");
+                const titreArtc = document.createElement("h5");
+                const contentArtc = document.createElement("div");
+                let linkArtc = null;
+
+
+                titreArtc.innerHTML = "&#x201F; " + revenu.titre;
+                contentArtc.innerHTML = "<sup>Publié le " + revenu.date + "</sup><br><br><p>" + revenu.artc +"</p>";
+                
+                conteneur.appendChild(titreArtc);
+                conteneur.appendChild(contentArtc);
+
+                if (revenu.link){
+                    const linkArtc = document.createElement("div");
+                    linkArtc.innerHTML = "<a class='text-primary' href=" + revenu.link +"> Plus </a>";
+                    conteneur.appendChild(linkArtc);
+                }
+
+                listeArctileRevenus.appendChild(conteneur);
+            });
+
+            banques.forEach( function(banques) {
+                const conteneur = document.createElement("div");
+                const titreArtc = document.createElement("h5");
+                const contentArtc = document.createElement("div");
+                let linkArtc = null;
+                
+
+                titreArtc.innerHTML = "&#x201F; " + banques.titre;
+                contentArtc.innerHTML = "<sup>Publié le " + banques.date + "</sup><br><br><p>" + banques.artc +"</p>";
+
+                conteneur.appendChild(titreArtc);
+                conteneur.appendChild(contentArtc);
+
+                if (banques.link){
+                    const linkArtc = document.createElement("div");
+                    linkArtc.innerHTML = "<a class='text-primary' href=" + banques.link +"> Plus </a>";
+                    conteneur.appendChild(linkArtc);
+                }
+
+                listeArctileBanque.appendChild(conteneur);
+            });
+
+            credit.forEach( function(credit) {
+                const conteneur = document.createElement("div");
+                const titreArtc = document.createElement("h5");
+                const contentArtc = document.createElement("div");
+                let linkArtc = null;
+
+
+                titreArtc.innerHTML = "&#x201F; " + credit.titre;
+                contentArtc.innerHTML = "<sup>Publié le " + credit.date + "</sup><br><br><p>" + credit.artc +"</p>";
+                
+                conteneur.appendChild(titreArtc);
+                conteneur.appendChild(contentArtc);
+
+                if (credit.link) {
+                    linkArtc = document.createElement("div");
+                    linkArtc.innerHTML = "<a class='text-primary' href=" + credit.link +"> Plus </a>";
+                    conteneur.appendChild(linkArtc);
+                }
+
+                listeArctileCredit.appendChild(conteneur);
+            });
+
+            logement.forEach( function(logement) {
+                const conteneur = document.createElement("div");
+                const titreArtc = document.createElement("h5");
+                const contentArtc = document.createElement("div");
+                let linkArtc = null;
+                
+
+                titreArtc.innerHTML = "&#x201F; " + logement.titre;
+                contentArtc.innerHTML = "<sup>Publié le " + logement.date + "</sup><br><br><p>" + logement.artc +"</p>";
+                
+
+                conteneur.appendChild(titreArtc);
+                conteneur.appendChild(contentArtc);
+
+                if(logement.link){
+                    const linkArtc = document.createElement("div");
+                    linkArtc.innerHTML = "<a class='text-primary' href=" + logement.link +"> Plus </a>";
+                    conteneur.appendChild(linkArtc);
+                }
+
+                listeArctileLogement.appendChild(conteneur);
+            });
+
+            energie.forEach( function(energie) {
+                const conteneur = document.createElement("div");
+                const titreArtc = document.createElement("h5");
+                const contentArtc = document.createElement("div");
+                let linkArtc = null;
+                
+
+                titreArtc.innerHTML = "&#x201F; " + energie.titre;
+                contentArtc.innerHTML = "<sup>Publié le " + energie.date + "</sup><br><br><p>" + energie.artc +"</p>";
+
+                conteneur.appendChild(titreArtc);
+                conteneur.appendChild(contentArtc);
+
+                if(energie.link){
+                    const linkArtc = document.createElement("div");
+                    linkArtc.innerHTML = "<a class='text-primary' href=" + energie.link +"> Plus </a>";
+                    conteneur.appendChild(linkArtc);
+                }
+
+                listeArctileEnergie.appendChild(conteneur);
+            });
+
+            alimentation.forEach( function(alimentation) {
+                const conteneur = document.createElement("div");
+                const titreArtc = document.createElement("h5");
+                const contentArtc = document.createElement("div");
+                let linkArtc = null;
+                
+
+                titreArtc.innerHTML = "&#x201F; " + alimentation.titre;
+                contentArtc.innerHTML = "<sup>Publié le " + alimentation.date + "</sup><br><br><p>" + alimentation.artc +"</p>";
+
+                conteneur.appendChild(titreArtc);
+                conteneur.appendChild(contentArtc);
+
+                if(alimentation.link){
+                    const linkArtc = document.createElement("div");
+                    linkArtc.innerHTML = "<a class='text-primary' href=" + alimentation.link +"> Plus </a>";
+                    conteneur.appendChild(linkArtc);
+                }
+
+                listeArctileAlimentation.appendChild(conteneur);
+            });
+
+            transport.forEach( function(transport) {
+                const conteneur = document.createElement("div");
+                const titreArtc = document.createElement("h5");
+                const contentArtc = document.createElement("div");
+                let linkArtc = null;
+                
+
+                titreArtc.innerHTML = "&#x201F; " + transport.titre;
+                contentArtc.innerHTML = "<sup>Publié le " + transport.date + "</sup><br><br><p>" + transport.artc +"</p>";
+
+                conteneur.appendChild(titreArtc);
+                conteneur.appendChild(contentArtc);
+
+                if(transport.link){
+                    const linkArtc = document.createElement("div");
+                    linkArtc.innerHTML = "<a class='text-primary' href=" + transport.link +"> Plus </a>";
+                    conteneur.appendChild(linkArtc);
+                }
+
+                listeArctileTransport.appendChild(conteneur);
+            });
+
+            sante.forEach( function(sante) {
+                const conteneur = document.createElement("div");
+                const titreArtc = document.createElement("h5");
+                const contentArtc = document.createElement("div");
+                let linkArtc = null;
+                
+
+                titreArtc.innerHTML = "&#x201F; " + sante.titre;
+                contentArtc.innerHTML = "<sup>Publié le " + sante.date + "</sup><br><br><p>" + sante.artc +"</p>";
+
+                conteneur.appendChild(titreArtc);
+                conteneur.appendChild(contentArtc);
+
+                if(sante.link){
+                const linkArtc = document.createElement("div");
+                linkArtc.innerHTML = "<a class='text-primary' href=" + sante.link +"> Plus </a>";
+                conteneur.appendChild(linkArtc);
+                }
+
+                listeArctileSante.appendChild(conteneur);
+            });
+
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    </body>
+</html>
