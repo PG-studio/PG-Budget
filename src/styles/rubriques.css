@@ -1,0 +1,92 @@
+div{
+    color: var(--bs-secondary);
+}
+
+h5{
+    color: coral;
+}
+
+#introduction-rubriques{
+    position: relative;
+}
+
+#navigation-ordinateur{
+    display: block;
+}
+
+.list-group-item {
+    padding: 0.7rem;
+}
+
+
+#liste-artc-revenus div, 
+#liste-artc-banques div, 
+#liste-artc-credit div, 
+#liste-artc-logement div,
+#liste-artc-energie div,
+#liste-artc-alimentation div,
+#liste-artc-transport div,
+#liste-artc-sante div{
+    margin-top: 0.5rem;
+    padding: 10px 20px;
+    background-color: var(--bs-white);
+    border-radius: var(--bs-border-radius)!important;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+
+#liste-artc-revenus div div, 
+#liste-artc-banques div div, 
+#liste-artc-credit div div, 
+#liste-artc-logement div div,
+#liste-artc-energie div div,
+#liste-artc-alimentation div div,
+#liste-artc-transport div div,
+#liste-artc-sante div div{
+    border-left: none;
+    box-shadow: none;
+}
+
+#liste-artc-revenus h5, 
+#liste-artc-banques h5, 
+#liste-artc-credit h5, 
+#liste-artc-logement h5,
+#liste-artc-energie h5,
+#liste-artc-alimentation h5,
+#liste-artc-transport h5,
+#liste-artc-sante h5{
+    margin-top: 0.5rem;
+    padding: 10px 20px;
+}
+
+#img-QR-code{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 200px;
+    width: 200px;
+}
+
+/* Télephone  */
+@media (max-width: 575.98px) { 
+
+    #navigation-ordinateur{
+        display: flex;
+    }
+    
+}
+
+/* Télephone Grand */
+@media (max-width: 767.98px) { 
+
+    #navigation-ordinateur{
+        display: flex;
+    }
+    
+
+}
+
+/* Tablette */
+@media screen and (max-width: 700px)
+{
+
+
+}

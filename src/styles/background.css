@@ -1,0 +1,25 @@
+#background_image{
+    z-index: -1;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+#cercle{
+    margin-top: 130vh;
+    margin-left: -20vw;
+    width: 800px;
+    height: 700px;
+    border-radius: 50%;
+    background: linear-gradient(320deg, #e0eafc 17.23%, #c8dbff 60.08%);
+}
+
+#coin{
+    zoom: 3;
+    margin-top: 188vh;
+    margin-left: 25vw;
+    width: 100%;
+    min-height: 200px;
+    background-image: url(../../image/fond-web.svg);
+    background-repeat: no-repeat;
+}
