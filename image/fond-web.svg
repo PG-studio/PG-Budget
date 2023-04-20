@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 3840 2160" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<linearGradient gradientTransform="matrix(3.37056 0 0 3.69368 504.113 37.9613)" gradientUnits="userSpaceOnUse" id="LinearGradient" x1="168.683" x2="400.205" y1="440.538" y2="482.235">
+<stop offset="0" stop-color="#ffffff"/>
+<stop offset="1" stop-color="#c8dbff"/>
+</linearGradient>
+<linearGradient gradientTransform="matrix(3.42506 0 0 3.78093 498.125 11.7762)" gradientUnits="userSpaceOnUse" id="LinearGradient_2" x1="112.805" x2="305.037" y1="240.441" y2="217.006">
+<stop offset="0" stop-color="#ffffff"/>
+<stop offset="1" stop-color="#c8dbff"/>
+</linearGradient>
+<linearGradient gradientTransform="matrix(4.36312 0 0 4.63946 773.525 -59.1207)" gradientUnits="userSpaceOnUse" id="LinearGradient_3" x1="452.112" x2="331.035" y1="432.6" y2="420.567">
+<stop offset="0" stop-color="#ffffff"/>
+<stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+</linearGradient>
+<linearGradient gradientTransform="matrix(3.4288 -0.268308 0.242318 3.70805 708.438 -152.196)" gradientUnits="userSpaceOnUse" id="LinearGradient_4" x1="112.362" x2="269.482" y1="208.795" y2="198.742">
+<stop offset="0" stop-color="#ffffff"/>
+<stop offset="1" stop-color="#c8dbff"/>
+</linearGradient>
+</defs>
+<g id="Calque-1" vectornator:layerName="Calque 1">
+<g opacity="1">
+<path d="M909.671 517.992C1066.03 306.973 1559.4 457.419 2011.64 854.025C2463.88 1250.63 2703.73 1743.2 2547.37 1954.22C2391.01 2165.24 1897.65 2014.8 1445.41 1618.19C993.167 1221.59 753.312 729.012 909.671 517.992Z" fill="url(#LinearGradient)" fill-rule="nonzero" opacity="1" stroke="none"/>
+<path d="M941.523 487.209C1096.68 276.744 1586.25 426.795 2035.01 822.355C2483.77 1217.91 2721.78 1709.2 2566.63 1919.66C2411.47 2130.12 1921.9 1980.07 1473.14 1584.51C1024.38 1188.95 786.366 697.671 941.523 487.209Z" fill="url(#LinearGradient_2)" fill-rule="nonzero" opacity="1" stroke="none"/>
+</g>
+<g opacity="1">
+<path d="M1145.98 300.312C1287.73 77.463 1788.17 189.207 2263.74 549.898C2739.31 910.59 3009.92 1383.65 2868.17 1606.49C2726.42 1829.34 2225.99 1717.6 1750.42 1356.91C1274.85 996.213 1004.24 523.159 1145.98 300.312Z" fill="url(#LinearGradient_3)" fill-rule="nonzero" opacity="1" stroke="#fefefe" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+<path d="M1182.79 279.339C1324.63 60.7763 1824.36 169.584 2298.96 522.369C2773.56 875.152 3043.31 1338.32 2901.47 1556.88C2759.64 1775.44 2259.91 1666.64 1785.31 1313.85C1310.71 961.071 1040.95 497.902 1182.79 279.339Z" fill="url(#LinearGradient_4)" fill-rule="nonzero" opacity="1" stroke="#fefefe" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1"/>
+</g>
+</g>
+</svg>
