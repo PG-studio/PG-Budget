@@ -177,6 +177,20 @@ ul{
     border-color: var(--main-color-titre-second)!important;
 }
 
+input::placeholder {
+    white-space: pre;
+    overflow-wrap: normal;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    line-height: initial;
+}
+
+::placeholder {
+    -webkit-text-security: none;
+    color: #8080806c!important;
+    font-size: small;
+    pointer-events: none;
+}
 
 /* Télephone  */
 @media (max-width: 575.98px) { 
