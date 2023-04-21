@@ -109,13 +109,6 @@ a{
               transform: translateY(-6.4px);
     }
 }
-  
-
-#bodyApp{
-    
-    height: 100vh;
-    width: 100vw;
-}
 
 .text-success-pg{
     color: cornflowerblue;
@@ -135,7 +128,6 @@ a{
 
 #descr-3{
     min-height: 70vh;
-    background: linear-gradient(#c8dbff, #f3f6fb 25.21%);
 }
 
 #descr-2{
@@ -150,12 +142,6 @@ a{
 }
 
 #str{
-    z-index: 12;
-    position: fixed;
-    overflow: scroll;
-    height: 100vh;
-    width: 100vw;
-    
     background-color: var(--main-color-second);
     background-image: url(../../image/fond-web.svg);
     background-size: 150vw;
