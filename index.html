@@ -35,7 +35,7 @@
 
         <noscript>You need to enable JavaScript to run this app.</noscript>
 
-        <div id="background_image" class="d-none">
+        <div id="background_image">
             <div id="cercle"></div>
             <div id="coin"></div>
         </div>
@@ -157,17 +157,17 @@
                         </form>
                     </div>
                     <div class="container-fluid d-flex justify-content-center">
-                        <span id="scroll-indic" onclick="go()" class="material-symbols-outlined display-3 mt-3 pb-5 opacity-50" style="zoom: 2;">expand_more</span>
+                        <span id="scroll-indic" class="material-symbols-outlined display-3 mt-3 pb-5 opacity-50" style="zoom: 2;">expand_more</span>
                     </div>
 
                 </div>
             </div>
 
-            <div id="bodyApp" class="d-none">
+            <div id="bodyApp">
                 <div>
-                    <div id="descr-3" class="container-fluid py-3 mb-5 shadow">
+                    <div id="descr-3" class="container-fluid bg-light py-3 mb-5 shadow">
                         <div class="container-fluid d-flex justify-content-center pt-4">
-                            <span id="scroll-indic" onclick="out()" class="material-symbols-outlined display-3 mt-3 pb-5 opacity-50" style="zoom: 2;">expand_less</span>
+                            <span id="scroll-indic" class="material-symbols-outlined display-3 mt-3 pb-5 opacity-50" style="zoom: 2;">expand_less</span>
                         </div>
                         <div class="container">
                             <div class="hstack gap-3 pt-3">
@@ -464,20 +464,6 @@
         </div>
 
         <script>
-            function go() {
-                document.getElementById("str").classList.add("d-none")
-                document.getElementById("str").classList.remove("d-block")
-
-                document.getElementById("bodyApp").classList.remove("d-none")
-                document.getElementById("background_image").classList.remove("d-none")
-            };
-            function out() {
-                document.getElementById("str").classList.add("d-block")
-                document.getElementById("str").classList.remove("d-none")
-
-                document.getElementById("bodyApp").classList.add("d-none")
-                document.getElementById("background_image").classList.add("d-none")
-            };
 
             const salary = document.getElementById("salaire");
             const autreRess = document.getElementById("autreRess");
