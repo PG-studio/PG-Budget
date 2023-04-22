@@ -157,7 +157,7 @@
                         </form>
                     </div>
                     <div class="container-fluid d-flex justify-content-center">
-                        <span id="scroll-indic" class="material-symbols-outlined display-3 mt-3 pb-5 opacity-50" style="zoom: 2;">expand_more</span>
+                        <span id="scroll-indic" onclick="go()" class="material-symbols-outlined display-3 mt-3 pb-5 opacity-50" style="zoom: 2;">expand_more</span>
                     </div>
 
                 </div>
@@ -167,7 +167,7 @@
                 <div>
                     <div id="descr-3" class="container-fluid bg-light py-3 mb-5 shadow">
                         <div class="container-fluid d-flex justify-content-center pt-4">
-                            <span id="scroll-indic" class="material-symbols-outlined display-3 mt-3 pb-5 opacity-50" style="zoom: 2;">expand_less</span>
+                            <span id="scroll-indic" onclick="out()" class="material-symbols-outlined display-3 mt-3 pb-5 opacity-50" style="zoom: 2;">expand_less</span>
                         </div>
                         <div class="container">
                             <div class="hstack gap-3 pt-3">
@@ -464,6 +464,12 @@
         </div>
 
         <script>
+            function go(){
+                window.scrollTo(0, 1050)
+            }
+            function out(){
+                window.scrollTo(1050, 0)
+            }
 
             const salary = document.getElementById("salaire");
             const autreRess = document.getElementById("autreRess");
